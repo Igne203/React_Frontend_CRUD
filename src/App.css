@@ -1,0 +1,31 @@
+
+h1 {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-col {
+  margin-bottom: 25px;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-text {
+  margin-top: 15px;
+}
+.card-text p {
+  margin-bottom: 0;
+}
+
+.character-block {
+  background-color: rgb(71, 71, 71);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
