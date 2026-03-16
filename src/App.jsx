@@ -12,6 +12,7 @@ import { initialCharacters } from "./data/characters";
 function App() {
   
   const [characters, setCharacters] = useState(initialCharacters);
+  const [editCharacter, setEditCharacter] = useState(null);
 
   const handleCreate = (payload) => {
     setCharacters((prev) => {
@@ -29,8 +30,8 @@ function App() {
         character.id === updatedCharacter.id ? updatedCharacter : character
       );
     });
+    setEditCharacter(null);
   };
-  const [editCharacter, setEditCharacter] = useState(null);
 
   const characterItems = characters.map((c) => (
     <Col key={c.id} lg={4} className="card-col">
